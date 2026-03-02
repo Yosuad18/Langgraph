@@ -1,17 +1,13 @@
-## Hacer un entorno
-python venv ai_env
+## Hacer un entorno y activarlo 
+uv venv ai_env
 ai_env\Scripts\activate
 
-## Tener en pip install:
-"pip install langchain"
-"pip install langgraph"
-"pip install langchain-google-genai"
-"pip install langchain-ollama"
-"pip install pypdf"
-"pip install matplotlib"
-"pip install numpy"
-"pip install pandas"
-"pip install notebook
+## Tener en uv install:
+"uv pip install langchain langgraph langchain-google-genai langchain-ollama pypdf matplotlib numpy pandas notebook"
 
+## Poner todo a trabajar
+# Opción A: Generar el archivo con versiones exactas (Recomendado para producción)
+uv pip freeze > requirements.txt
 
-
+## Descargar TODO
+uv pip install -r requirements.txt

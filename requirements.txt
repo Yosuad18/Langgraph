@@ -1,0 +1,17 @@
+# --- Framework de Orquestación ---
+langchain>=0.3.0
+langgraph>=0.2.0
+
+# --- Modelos de Lenguaje (LLMs) ---
+# Esta versión es clave para usar los últimos modelos de Google (Flash/Pro)
+langchain-google-genai>=2.0.0
+langchain-ollama>=0.2.0
+
+# --- Procesamiento de Datos y PDF ---
+pypdf>=5.0.0
+numpy>=2.0.0
+pandas>=2.2.0
+
+# --- Visualización y Notebooks ---
+matplotlib>=3.9.0
+notebook>=7.2.0
