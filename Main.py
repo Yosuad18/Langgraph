@@ -12,7 +12,7 @@ from langchain_openai import ChatOpenAI
 
 #Configuracion obtener APU desde secrets desde google Colab
 from google.colab import userdata
-OPENAI_API_KEY = userdata.get('OPENAI_API_KEY')
-os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
+GEMINI_API_KEY = userdata.get('OPENAI_API_KEY')
+os.environ["GEMINI_API_KEY"] = GEMINI_API_KEY
 
 llm = ChatOpenAI(model="gpt-4o-mini")
